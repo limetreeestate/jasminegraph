@@ -34,6 +34,7 @@ public:
     static const string ERROR;
     static const string BATCH_UPLOAD;               // This is to upload a file as a batch
     static const string BATCH_UPLOAD_CENTRAL;       // This is to upload centralstore file as a batch
+    static const string BATCH_UPLOAD_COMPOSITE_CENTRAL;       // This is to upload composite centralstore file as a batch
     static const string UPLOAD_RDF_ATTRIBUTES;       // This is to upload attribute list of partitions file as a batch
     static const string UPLOAD_RDF_ATTRIBUTES_CENTRAL; // This is to upload attribute list of centralstore file as a batch
     static const string BATCH_UPLOAD_CHK;           // This is to check whether the upload process has finished or not.
@@ -57,10 +58,14 @@ public:
     static const string NPLACES;
     static const string TRIANGLES;
     static const string SEND_CENTRALSTORE_TO_AGGREGATOR;
+    static const string SEND_COMPOSITE_CENTRALSTORE_TO_AGGREGATOR;
     static const string AGGREGATE_CENTRALSTORE_TRIANGLES;
+    static const string AGGREGATE_COMPOSITE_CENTRALSTORE_TRIANGLES;
     static const string PERFORMANCE_STATISTICS;
     static const string INITIATE_TRAIN;
     static const string INITIATE_PREDICT;
+    static const string CREATE_BLOOM_FILTERS;
+    static const string BUCKET_LOCAL_CLUSTERS;
     static const string SEND_HOSTS;
     static const string INITIATE_MODEL_COLLECTION;
     static const string INITIATE_FRAGMENT_RESOLUTION;
@@ -69,6 +74,10 @@ public:
     static const string ACKNOWLEDGE_MASTER;
     static const string WORKER_INFO_SEND;
     static const string UPDATE_DONE;
+    static const string CHECK_FILE_ACCESSIBLE;
+    static const string SEND_FILE_TYPE;
+    static const string FILE_TYPE_CENTRALSTORE_AGGREGATE;
+    static const string FILE_TYPE_CENTRALSTORE_COMPOSITE;
 };
 
 const int INSTANCE_DATA_LENGTH = 300;
